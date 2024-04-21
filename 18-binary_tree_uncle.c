@@ -13,7 +13,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 	if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
 		return (NULL);
 
-	/* Determine the uncle based on the relationship between the parent and grandparent */
+	/* Determine the uncle based on the relationship between the parent & g/par */
 	if (node->parent == node->parent->parent->left)
 		return (node->parent->parent->right);
 	else
